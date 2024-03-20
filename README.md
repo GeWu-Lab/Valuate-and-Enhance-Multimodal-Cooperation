@@ -61,9 +61,9 @@ If you find this work useful, please consider citing it.
 
 <pre><code>
 @inproceedings{wei2024enhancing,
-  title	= {Enhancing Multi-modal Cooperation via Sample-level Modality Valuation},
+  title={Enhancing Multi-modal Cooperation via Sample-level Modality Valuation},
   author={Wei, Yake and Feng, Ruoxuan and Wang, Zihe and Hu, Di},
-  booktitle	= {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year	= {2024}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
 }
 </code></pre>
