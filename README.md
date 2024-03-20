@@ -9,4 +9,61 @@ Here is the official PyTorch implementation of ''*Enhancing Multi-modal Cooperat
 
 **Accepted by: IEEE Conference on Computer Vision and Pattern Recognition(CVPR 2024)**
 
-**[[arXiv](#)]** **[[Supplementary Material](#)]** 
+
+
+## Challenge of sample-level modality discrepancy
+
+The imbalanced multi-modal learning problem, where most existing models cannot jointly utilize all modalities well Some methods, has raised lots of attention. However, the former methods only consider the global modality discrepancy at dataset-level, and achieve improvement on common curated dataset (as Kinetics Sounds dataset in Figure 1). 
+
+
+<div  align="center">    
+<img src="pics/results.jpg",width ="60%" />
+</div>
+
+But under realistic scenarios, the modality discrepancy could vary across different samples. For example, Figure 2 (a) and (b) show two audio-visual samples of *motorcycling* category. The motorcycle in *Sample 1* is hard to observe while the wheel of motorcycle in *Sample 2* is quite clear.
+This could make audio or visual modality contribute more to the final prediction respectively for these two samples. This fine-grained modality discrepancy is hard to perceive by existing methods. Hence, how to reasonably observe and improve multi-modal cooperation at sample-level is still expected to be resolved. To highlight this sample-level modality discrepancy, we propose the global balanced **MM-Debiased dataset** where the dataset-level modality discrepancy is no longer significant (as Figure 2 (d)). Not surprisingly, existing imbalanced multi-modal learning methods which only consider dataset-level discrepancy fail on MM-Debiased dataset, as shown in Figure 1. 
+
+
+<div  align="center">    
+<img src="pics/sample.jpg",width ="80%" />
+</div>
+
+
+
+In this paper, we introduce a sample-level modality valuation metric, to observe the contribution of each modality during prediction for each sample. Then, we propose the fine-grained as well as effective **sample-level re-sample method** and the coarse but efficient **modality-level re-sample method**. As Figure 1, our methods considering the sample-level modality discrepancy achieves considerable improvement on both existing curated and global balanced dataset.
+
+
+
+## Code instruction
+
+### Data Preparation
+The original datasets we used can be found in：
+[Kinetics-Sounds](https://github.com/cvdfoundation/kinetics-dataset).
+[UCF101](https://www.crcv.ucf.edu/data/UCF101.php).
+
+For the proposed MM-Debiased dataset, the json files of data samples are [here](#).
+
+
+### Run
+You can simply run the code using:  
+<pre><code>
+python code/baseline.py  # Joint training baseline
+</code></pre>
+<pre><code>
+python code/sample_level.py  # Sample-level method
+</code></pre>
+<pre><code>
+python code/modality_level.py  # Modality-level method
+</code></pre>
+
+## Citation
+If you find this work useful, please consider citing it.
+
+<pre><code>
+@inproceedings{wei2024enhancing,
+  title	= {Enhancing Multi-modal Cooperation via Sample-level Modality Valuation},
+  author={Wei, Yake and Feng, Ruoxuan and Wang, Zihe and Hu, Di},
+  booktitle	= {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year	= {2024}
+}
+</code></pre>
