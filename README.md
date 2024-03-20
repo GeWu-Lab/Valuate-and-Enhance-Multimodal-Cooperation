@@ -1,11 +1,11 @@
 # Enhancing-Multi-modal-Cooperation-via-Sample-level-Modality-Valuation
 
 
-Here is the official PyTorch implementation of ''*Enhancing Multi-modal Cooperation via Sample-level Modality Valuation*'', which aims to balance the uni-modal contribution during joint multi-modal training by re-sample strategy. Please refer to our [CVPR 2024 paper](#) for more details.
+Here is the official PyTorch implementation of ''*Enhancing Multi-modal Cooperation via Sample-level Modality Valuation*'', which aims to balance the uni-modal contribution during joint multi-modal training by re-sample strategy. Please refer to our [CVPR 2024 paper](https://arxiv.org/abs/2309.06255) for more details.
 
 **Paper Title: "Enhancing Multi-modal Cooperation via Sample-level Modality Valuation"**
 
-**Authors: [Yake Wei\*](https://echo0409.github.io/), Ruoxuan Feng, Zihe Wang and [Di Hu](https://dtaoo.github.io/index.html)**
+**Authors: [Yake Wei](https://echo0409.github.io/), Ruoxuan Feng, Zihe Wang and [Di Hu](https://dtaoo.github.io/index.html)**
 
 **Accepted by: IEEE Conference on Computer Vision and Pattern Recognition(CVPR 2024)**
 
@@ -43,7 +43,21 @@ The original datasets we used can be found in：
 [UCF101](https://www.crcv.ucf.edu/data/UCF101.php).
 
 #### MM-Debiased dataset
-For the proposed MM-Debiased dataset, the json files of data samples are [here](#).
+For the proposed MM-Debiased dataset, the json files of data samples are [here](https://github.com/GeWu-Lab/Enhancing-Multi-modal-Cooperation-via-Sample-level-Modality-Valuation/blob/main/MM-Debiased%20dataset/MM-Debiased.json).
+
+Samples of MM-Debiased dataset are selected from VGG-Sound and Kinetics-400 datasets.
+
+This is one example data sample from VGGSound dataset:
+<pre><code>
+"RTWs-Y_usjs_000017_000027": {"subset": "validation", "label": "motorcycling"}
+# "RTWs-Y_usjs_000017_000027": sample id of VGGSound
+</code></pre>
+
+This is one example data sample from Kinetics-400 dataset:
+<pre><code>
+"ZUJ5LJGX9oc_20": {"subset": "validation", "label": "lawn mowing"}
+# "ZUJ5LJGX9oc_20": sample id of Kinetics-400
+</code></pre>
 
 
 ### Run
