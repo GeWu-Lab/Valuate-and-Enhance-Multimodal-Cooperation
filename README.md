@@ -17,7 +17,7 @@ The imbalanced multi-modal learning problem, where most existing models cannot j
 
 
 <div  align="center">    
-<img src="pics/results.jpg",width ="40%" />
+<img src="pics/results.jpg",width ="20%" />
 </div>
 
 But under realistic scenarios, the modality discrepancy could vary across different samples. For example, Figure 2 (a) and (b) show two audio-visual samples of *motorcycling* category. The motorcycle in *Sample 1* is hard to observe while the wheel of motorcycle in *Sample 2* is quite clear.
