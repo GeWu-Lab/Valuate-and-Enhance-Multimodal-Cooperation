@@ -1,4 +1,4 @@
-# Codes of Enhancing-Multi-modal-Cooperation-via-Sample-level-Modality-Valuation
+# Codes of Enhancing Multi-modal Cooperation via Sample-level Modality Valuation
 
 
 Here is the official PyTorch implementation of ''*Enhancing Multi-modal Cooperation via Sample-level Modality Valuation*'', which aims to balance the uni-modal contribution during joint multi-modal training by re-sample strategy. Please refer to our [CVPR 2024 paper](https://arxiv.org/abs/2309.06255) for more details.
