@@ -38,7 +38,7 @@ In this paper, we introduce a sample-level modality valuation metric, to observe
 
 ### Data Preparation
 The original datasets we used can be found in：
-[Kinetics-Sounds](https://github.com/cvdfoundation/kinetics-dataset).
+[Kinetics-Sounds](https://github.com/cvdfoundation/kinetics-dataset),
 [UCF101](https://www.crcv.ucf.edu/data/UCF101.php).
 
 For the proposed MM-Debiased dataset, the json files of data samples are [here](#).
