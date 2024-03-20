@@ -43,7 +43,7 @@ The original datasets we used can be found in：
 [UCF101](https://www.crcv.ucf.edu/data/UCF101.php).
 
 #### MM-Debiased dataset
-For the proposed MM-Debiased dataset, the json files of data samples are [here](https://github.com/GeWu-Lab/Enhancing-Multi-modal-Cooperation-via-Sample-level-Modality-Valuation/blob/main/MM-Debiased%20dataset/MM-Debiased.json).
+For the proposed MM-Debiased dataset, the json files of data samples are [here](/MM-Debiased dataset/MM-Debiased.json).
 
 Samples of MM-Debiased dataset are selected from VGG-Sound and Kinetics-400 datasets.
 
