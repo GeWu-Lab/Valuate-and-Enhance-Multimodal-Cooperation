@@ -1,9 +1,9 @@
-# Codes of Enhancing Multi-modal Cooperation via Sample-level Modality Valuation
+# Codes of Enhancing Multimodal Cooperation via Sample-level Modality Valuation
 
 
-Here is the official PyTorch implementation of ''*Enhancing Multi-modal Cooperation via Sample-level Modality Valuation*'', which aims to balance the uni-modal contribution during joint multi-modal training by re-sample strategy. Please refer to our [CVPR 2024 paper](https://arxiv.org/abs/2309.06255) for more details.
+Here is the official PyTorch implementation of ''*Enhancing Multimodal Cooperation via Sample-level Modality Valuation*'', which aims to balance the uni-modal contribution during joint multimodal training by re-sample strategy. Please refer to our [CVPR 2024 paper](https://arxiv.org/abs/2309.06255) for more details.
 
-**Paper Title: "Enhancing Multi-modal Cooperation via Sample-level Modality Valuation"**
+**Paper Title: "Enhancing multimodal Cooperation via Sample-level Modality Valuation"**
 
 **Authors: [Yake Wei](https://echo0409.github.io/), Ruoxuan Feng, Zihe Wang and [Di Hu](https://dtaoo.github.io/index.html)**
 
@@ -13,7 +13,7 @@ Here is the official PyTorch implementation of ''*Enhancing Multi-modal Cooperat
 
 ## Challenge of sample-level modality discrepancy
 
-The imbalanced multi-modal learning problem, where most existing models cannot jointly utilize all modalities well Some methods, has raised lots of attention. However, the former methods only consider the global modality discrepancy at dataset-level, and achieve improvement on common curated dataset (as Kinetics Sounds dataset in Figure 1). 
+The imbalanced multimodal learning problem, where most existing models cannot jointly utilize all modalities well Some methods, has raised lots of attention. However, the former methods only consider the global modality discrepancy at dataset-level, and achieve improvement on common curated dataset (as Kinetics Sounds dataset in Figure 1). 
 
 
 <div  align="center">    
@@ -21,7 +21,7 @@ The imbalanced multi-modal learning problem, where most existing models cannot j
 </div>
 
 But under realistic scenarios, the modality discrepancy could vary across different samples. For example, Figure 2 (a) and (b) show two audio-visual samples of *motorcycling* category. The motorcycle in *Sample 1* is hard to observe while the wheel of motorcycle in *Sample 2* is quite clear.
-This could make audio or visual modality contribute more to the final prediction respectively for these two samples. This fine-grained modality discrepancy is hard to perceive by existing methods. Hence, how to reasonably observe and improve multi-modal cooperation at sample-level is still expected to be resolved. To highlight this sample-level modality discrepancy, we propose the global balanced **MM-Debiased dataset** where the dataset-level modality discrepancy is no longer significant (as Figure 2 (d)). Not surprisingly, existing imbalanced multi-modal learning methods which only consider dataset-level discrepancy fail on MM-Debiased dataset, as shown in Figure 1. 
+This could make audio or visual modality contribute more to the final prediction respectively for these two samples. This fine-grained modality discrepancy is hard to perceive by existing methods. Hence, how to reasonably observe and improve multimodal cooperation at sample-level is still expected to be resolved. To highlight this sample-level modality discrepancy, we propose the global balanced **MM-Debiased dataset** where the dataset-level modality discrepancy is no longer significant (as Figure 2 (d)). Not surprisingly, existing imbalanced multimodal learning methods which only consider dataset-level discrepancy fail on MM-Debiased dataset, as shown in Figure 1. 
 
 
 <div  align="center">    
@@ -77,7 +77,7 @@ If you find this work useful, please consider citing it.
 
 <pre><code>
 @inproceedings{wei2024enhancing,
-  title={Enhancing Multi-modal Cooperation via Sample-level Modality Valuation},
+  title={Enhancing multimodal Cooperation via Sample-level Modality Valuation},
   author={Wei, Yake and Feng, Ruoxuan and Wang, Zihe and Hu, Di},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2024}
