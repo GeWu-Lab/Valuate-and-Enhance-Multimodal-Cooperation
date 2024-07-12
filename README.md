@@ -58,6 +58,8 @@ This is one example data sample from Kinetics-400 dataset:
 "ZUJ5LJGX9oc_20": {"subset": "validation", "label": "lawn mowing"}
 # "ZUJ5LJGX9oc_20": sample id of Kinetics-400
 </code></pre>
+#### Data preprocessing
+Please refer to [here](https://github.com/GeWu-Lab/OGM-GE_CVPR2022).
 
 
 ### Run
