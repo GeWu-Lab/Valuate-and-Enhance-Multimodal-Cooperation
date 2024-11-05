@@ -51,9 +51,9 @@ def get_arguments():
     parser.add_argument("--part_ratio", default=0.2, type=float, help="part ratio")
     parser.add_argument("--alpha", default=1, type=float, help="alpha")
 
-    parser.add_argument("--optimizer", default="sgd", type=str, choices=["sgd", "adam"])
+    parser.add_argument("--optimizer", default="adam", type=str, choices=["sgd", "adam"])
     parser.add_argument(
-        "--learning_rate", default=0.001, type=float, help="initial learning rate"
+        "--learning_rate", default=5e-5, type=float, help="initial learning rate"
     )
     parser.add_argument(
         "--lr_decay_step", default=30, type=int, help="where learning rate decays"
