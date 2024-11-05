@@ -47,9 +47,9 @@ def get_arguments():
         "--encoder_lr_decay", default=0.1, type=float, help="decay coefficient"
     )
 
-    parser.add_argument("--optimizer", default="sgd", type=str, choices=["sgd", "adam"])
+    parser.add_argument("--optimizer", default="adam", type=str, choices=["sgd", "adam"])
     parser.add_argument(
-        "--learning_rate", default=0.001, type=float, help="initial learning rate"
+        "--learning_rate", default=5e-05, type=float, help="initial learning rate"
     )
     parser.add_argument(
         "--lr_decay_step", default=30, type=int, help="where learning rate decays"
