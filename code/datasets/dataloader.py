@@ -153,7 +153,7 @@ class AV_KS_Dataset_sample_level(Dataset):
         
         for i in range(length):
           contrib_a, contrib_v = contribution[i]
-          if 0.4 < contrib_a < 0.9: #0.5
+          if 0.4 < contrib_a < 1: #0.5
                 for tt in range(1):
                         self.data.append(self.data[i])
                         self.label.append(self.label[i])
@@ -169,7 +169,7 @@ class AV_KS_Dataset_sample_level(Dataset):
                       self.label.append(self.label[i])
                       self.drop.append(2)
 
-          if 0.4 < contrib_v < 0.9: #0.5
+          if 0.4 < contrib_v < 1: #0.5
               for tt in range(1):
                       self.data.append(self.data[i])
                       self.label.append(self.label[i])
